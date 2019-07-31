@@ -1,0 +1,101 @@
+object frmPrincipal: TfrmPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Fastreport - Como come'#231'ar - 4'#186' Delphi Ing'#225
+  ClientHeight = 696
+  ClientWidth = 1008
+  Color = clBtnFace
+  Font.Charset = DEFAULT_CHARSET
+  Font.Color = clWindowText
+  Font.Height = -11
+  Font.Name = 'Tahoma'
+  Font.Style = []
+  OldCreateOrder = False
+  OnCreate = FormCreate
+  OnShow = FormShow
+  PixelsPerInch = 96
+  TextHeight = 13
+  object pnTopo: TPanel
+    Left = 0
+    Top = 0
+    Width = 1008
+    Height = 41
+    Align = alTop
+    TabOrder = 0
+    ExplicitTop = -6
+    object btnEmitir: TButton
+      Left = 8
+      Top = 10
+      Width = 75
+      Height = 25
+      Caption = 'Emitir'
+      TabOrder = 0
+    end
+  end
+  object dbgDados: TDBGrid
+    Left = 0
+    Top = 41
+    Width = 1008
+    Height = 655
+    Align = alClient
+    DataSource = dsPessoas
+    TabOrder = 1
+    TitleFont.Charset = DEFAULT_CHARSET
+    TitleFont.Color = clWindowText
+    TitleFont.Height = -11
+    TitleFont.Name = 'Tahoma'
+    TitleFont.Style = []
+  end
+  object cdsPessoas: TClientDataSet
+    Aggregates = <>
+    Params = <>
+    Left = 280
+    Top = 24
+  end
+  object dsPessoas: TDataSource
+    DataSet = cdsPessoas
+    Left = 272
+    Top = 80
+  end
+  object frxReport1: TfrxReport
+    Version = '5.6.18'
+    DotMatrixReport = False
+    IniFile = '\Software\Fast Reports'
+    PreviewOptions.Buttons = [pbPrint, pbLoad, pbSave, pbExport, pbZoom, pbFind, pbOutline, pbPageSetup, pbTools, pbEdit, pbNavigator, pbExportQuick]
+    PreviewOptions.Zoom = 1.000000000000000000
+    PrintOptions.Printer = 'Padr'#227'o'
+    PrintOptions.PrintOnSheet = 0
+    ReportOptions.CreateDate = 43677.065165740740000000
+    ReportOptions.LastChange = 43677.065165740740000000
+    ScriptLanguage = 'PascalScript'
+    ScriptText.Strings = (
+      'begin'
+      ''
+      'end.')
+    Left = 272
+    Top = 136
+    Datasets = <>
+    Variables = <>
+    Style = <>
+    object Data: TfrxDataPage
+      Height = 1000.000000000000000000
+      Width = 1000.000000000000000000
+    end
+    object Page1: TfrxReportPage
+      PaperWidth = 210.000000000000000000
+      PaperHeight = 297.000000000000000000
+      PaperSize = 9
+      LeftMargin = 10.000000000000000000
+      RightMargin = 10.000000000000000000
+      TopMargin = 10.000000000000000000
+      BottomMargin = 10.000000000000000000
+    end
+  end
+  object frxDBDataset1: TfrxDBDataset
+    UserName = 'frxDBDataset1'
+    CloseDataSource = False
+    BCDToCurrency = False
+    Left = 272
+    Top = 184
+  end
+end

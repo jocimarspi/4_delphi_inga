@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<TfrxReport Version="5.6.18" DotMatrixReport="False" IniFile="\Software\Fast Reports" PreviewOptions.Buttons="4095" PreviewOptions.Zoom="1" PrintOptions.Printer="Padrão" PrintOptions.PrintOnSheet="0" ReportOptions.CreateDate="43677,0651657407" ReportOptions.Description.Text="" ReportOptions.LastChange="43677,1146198843" ScriptLanguage="PascalScript" ScriptText.Text="begin&#13;&#10;&#13;&#10;end.">
+  <Datasets>
+    <item DataSet="frxDBDataset1" DataSetName="Pessoas"/>
+  </Datasets>
+  <Variables>
+    <item Name=" Minhas"/>
+    <item Name="TITULO" Value="'Título não informado'"/>
+  </Variables>
+  <TfrxDataPage Name="Data" Height="1000" Left="0" Top="0" Width="1000"/>
+  <TfrxReportPage Name="Page1" PaperWidth="210" PaperHeight="297" PaperSize="9" LeftMargin="10" RightMargin="10" TopMargin="10" BottomMargin="10" ColumnWidth="0" ColumnPositions.Text="" HGuides.Text="" VGuides.Text="">
+    <TfrxMasterData Name="mdPessoas" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="37,7953" Left="0" Top="204,09462" Width="718,1107" ColumnWidth="0" ColumnGap="0" DataSet="frxDBDataset1" DataSetName="Pessoas" RowCount="0">
+      <TfrxMemoView Name="Pessoasnome" Left="0" Top="0" Width="336,37817" Height="37,7953" DataField="nome" DataSet="frxDBDataset1" DataSetName="Pessoas" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" VAlign="vaCenter" Text="[Pessoas.&#34;nome&#34;]"/>
+      <TfrxMemoView Name="Pessoasidade" Left="336,37817" Top="0" Width="45,35436" Height="37,7953" DataField="idade" DataSet="frxDBDataset1" DataSetName="Pessoas" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" GapX="5" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="[Pessoas.&#34;idade&#34;]"/>
+      <TfrxMemoView Name="Pessoascpf" Left="381,73253" Top="0" Width="117,16540559" Height="37,7953" DataField="cpf" DataSet="frxDBDataset1" DataSetName="Pessoas" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" GapX="5" ParentFont="False" VAlign="vaCenter" Text="[Pessoas.&#34;cpf&#34;]"/>
+      <TfrxMemoView Name="Pessoascelular" Left="498,89796" Top="0" Width="128,50399559" Height="37,7953" DataField="celular" DataSet="frxDBDataset1" DataSetName="Pessoas" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" ParentFont="False" VAlign="vaCenter" Text="[Pessoas.&#34;celular&#34;]"/>
+      <TfrxMemoView Name="Pessoasestado" Left="627,40198" Top="0" Width="37,79527559" Height="37,7953" DataField="estado" DataSet="frxDBDataset1" DataSetName="Pessoas" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="0" Frame.Typ="15" HAlign="haCenter" ParentFont="False" VAlign="vaCenter" Text="[Pessoas.&#34;estado&#34;]"/>
+    </TfrxMasterData>
+    <TfrxHeader Name="Header1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="22,67718" Left="0" Top="158,74026" Width="718,1107">
+      <TfrxMemoView Name="Memo1" Left="0" Top="3,77953" Width="336,37817" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Nome"/>
+      <TfrxMemoView Name="Memo2" Left="336,37817" Top="3,77953" Width="45,35436" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" GapX="5" HAlign="haRight" ParentFont="False" Text="Idade"/>
+      <TfrxMemoView Name="Memo3" Left="381,73253" Top="3,77953" Width="117,16543" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="CPF"/>
+      <TfrxMemoView Name="Memo4" Left="498,89796" Top="3,77953" Width="128,50402" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" ParentFont="False" Text="Celular"/>
+      <TfrxMemoView Name="Memo5" Left="627,40198" Top="3,77953" Width="37,79527559" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" Frame.Typ="15" HAlign="haCenter" ParentFont="False" Text="UF"/>
+    </TfrxHeader>
+    <TfrxReportTitle Name="ReportTitle1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="79,37013" Left="0" Top="18,89765" Width="718,1107">
+      <TfrxMemoView Name="Memo6" Left="0" Top="3,77953" Width="718,1107" Height="37,7953" Font.Charset="1" Font.Color="0" Font.Height="-32" Font.Name="Arial" Font.Style="1" HAlign="haCenter" ParentFont="False" Text="[TITULO]"/>
+      <TfrxMemoView Name="Memo7" Left="0" Top="41,57483" Width="718,1107" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-11" Font.Name="Arial" Font.Style="2" HAlign="haCenter" ParentFont="False" Text="Emitido em  [FormatDateTime('dd/mm/yyyy hh:nn:ss',&#60;Date&#62;+&#60;Time&#62;)]"/>
+    </TfrxReportTitle>
+    <TfrxFooter Name="Footer1" FillType="ftBrush" FillGap.Top="0" FillGap.Left="0" FillGap.Bottom="0" FillGap.Right="0" Height="45,35436" Left="0" Top="264,5671" Width="718,1107">
+      <TfrxMemoView Name="Memo8" Left="158,74026" Top="0" Width="56,69295" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" VAlign="vaCenter" Text="[COUNT(mdPessoas)]"/>
+      <TfrxMemoView Name="Memo9" Left="0" Top="0" Width="158,74026" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="Quantidade de pessoas:"/>
+      <TfrxMemoView Name="Memo10" Left="158,74026" Top="18,89765" Width="56,69295" Height="18,89765" DisplayFormat.FormatStr="%2.2f" DisplayFormat.Kind="fkNumeric" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" ParentFont="False" VAlign="vaCenter" Text="[AVG(StrToInt(&#60;Pessoas.&#34;idade&#34;&#62;),mdPessoas)]"/>
+      <TfrxMemoView Name="Memo11" Left="0" Top="18,89765" Width="158,74026" Height="18,89765" Font.Charset="1" Font.Color="0" Font.Height="-13" Font.Name="Arial" Font.Style="1" HAlign="haRight" ParentFont="False" VAlign="vaCenter" Text="Média de idade:"/>
+    </TfrxFooter>
+  </TfrxReportPage>
+</TfrxReport>
